@@ -1,0 +1,42 @@
+# LeetCode Solutions Collection
+
+🚀 **75-Day Coding Challenge**: I'm committed to solving at least 2 LeetCode problems daily for 75 consecutive days, pushing myself to build consistent problem-solving habits.
+
+## 📋 Table of Contents
+
+- [**🔢 Arrays**](#-arrays) ← Click to jump to Array problems section
+
+## 📊 Problem Categories
+
+## 🔢 Arrays
+
+| #                                                                           | Problem                                                                            | Time   | Space | Notes                                                                                     |
+| --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------ | ----- | ----------------------------------------------------------------------------------------- |
+| [1752](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/) | [Check if Array Is Sorted and Rotated](#1752-check-if-array-is-sorted-and-rotated) | O(n)   | O(1)  | Count breaks in sorted order; at most 1 break allowed for valid rotation                  |
+| [26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)    | [Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)     | O(n)   | O(1)  | Two pointers: one explores, other tracks unique position                                  |
+| [189](https://leetcode.com/problems/rotate-array/)                          | [Rotate Array](#189-rotate-array)                                                  | O(n)   | O(n)  | Use modular arithmetic: new_index = (i + k) % n to handle wraparound                      |
+| [283](https://leetcode.com/problems/move-zeroes/)                           | Move Zeroes                                                                        | O(n)   | O(1)  | Two pointers: move non-zeros forward, fill remaining with zeros                           |
+| [268](https://leetcode.com/problems/missing-number/)                        | Missing Number                                                                     | O(n)   | O(1)  | XOR all numbers and indices; missing number will remain                                   |
+| [485](https://leetcode.com/problems/max-consecutive-ones/)                  | Max Consecutive Ones                                                               | O(n)   | O(1)  | Track current streak and max streak while traversing                                      |
+| [136](https://leetcode.com/problems/single-number/)                         | Single Number                                                                      | O(n)   | O(1)  | XOR all numbers; duplicates cancel out, unique remains                                    |
+| [137](https://leetcode.com/problems/single-number-ii/)                      | Single Number II                                                                   | O(n)   | O(1)  | Use bit manipulation to track occurrences modulo 3                                        |
+| [560](https://leetcode.com/problems/subarray-sum-equals-k/)                 | [Subarray Sum Equals K](#560-subarray-sum-equals-k)                                | O(n)   | O(n)  | Prefix sum + HashMap; check if (current_sum - k) exists in map                            |
+| [1](https://leetcode.com/problems/two-sum/)                                 | Two Sum                                                                            | O(n)   | O(n)  | HashMap to store complement values; check if target - current exists                      |
+| [75](https://leetcode.com/problems/sort-colors/)                            | Sort Colors                                                                        | O(n)   | O(1)  | Dutch National Flag: three pointers to partition 0s, 1s, 2s                               |
+| [169](https://leetcode.com/problems/majority-element/)                      | Majority Element                                                                   | O(n)   | O(1)  | Boyer-Moore voting; maintain candidate and count                                          |
+| [217](https://leetcode.com/problems/contains-duplicate/)                    | Contains Duplicate                                                                 | O(n)   | O(n)  | Use HashSet to track seen elements                                                        |
+| [219](https://leetcode.com/problems/contains-duplicate-ii/)                 | Contains Duplicate II                                                              | O(n)   | O(n)  | HashMap stores value and its latest index; check distance constraint                      |
+| [220](https://leetcode.com/problems/contains-duplicate-iii/)                | Contains Duplicate III                                                             | O(n)   | O(n)  | Bucket sort approach; group numbers by value ranges                                       |
+| [53](https://leetcode.com/problems/maximum-subarray/)                       | Maximum Subarray                                                                   | O(n)   | O(1)  | Kadane's algorithm; track current and global maximum                                      |
+| [121](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)       | Best Time to Buy and Sell Stock                                                    | O(n)   | O(1)  | Track minimum price seen so far and maximum profit                                        |
+| [2149](https://leetcode.com/problems/rearrange-array-elements-by-sign/)     | Rearrange Array Elements by Sign                                                   | O(n)   | O(n)  | Two pointers for positive/negative positions in result array                              |
+| [31](https://leetcode.com/problems/next-permutation/)                       | Next Permutation                                                                   | O(n)   | O(1)  | Find rightmost ascending pair, swap with next larger, reverse suffix                      |
+| [-]()                                                                       | Leader of an Array                                                                 | O(n)   | O(1)  | Traverse right to left; element is leader if greater than all to its right                |
+| [-]()                                                                       | Longest Consecutive Sequence                                                       | O(n)   | O(n)  | HashSet for O(1) lookup; only start counting from sequence beginnings                     |
+| [73](https://leetcode.com/problems/set-matrix-zeroes/)                      | Set Matrix Zeroes                                                                  | O(m×n) | O(1)  | Use first row/column as markers to avoid extra space                                      |
+| [48](https://leetcode.com/problems/rotate-image/)                           | Rotate Image                                                                       | O(n²)  | O(1)  | Transpose matrix then reverse each row for 90° rotation                                   |
+| [54](https://leetcode.com/problems/spiral-matrix/)                          | Spiral Matrix                                                                      | O(m×n) | O(1)  | Four boundaries: top, bottom, left, right; shrink after each direction                    |
+| [118](https://leetcode.com/problems/pascals-triangle/)                      | Pascal's Triangle                                                                  | O(n²)  | O(n²) | Each element is sum of two elements above it from previous row                            |
+| [229](https://leetcode.com/problems/majority-element-ii/)                   | Majority Element II                                                                | O(n)   | O(1)  | Extended Boyer-Moore; track two candidates since at most 2 elements can appear >n/3 times |
+
+_Last Updated: June 2025_
