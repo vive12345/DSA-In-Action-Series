@@ -48,9 +48,18 @@
 
 ## 🔍 Binary Search
 
-| #                                                           | Problem                | Time     | Space | Notes                                                                               |
-| ----------------------------------------------------------- | ---------------------- | -------- | ----- | ----------------------------------------------------------------------------------- |
-| [704](https://leetcode.com/problems/binary-search/)         | Binary Search          | O(log n) | O(1)  | Standard binary search template for finding exact target                            |
-| [35](https://leetcode.com/problems/search-insert-position/) | Search Insert Position | O(log n) | O(1)  | Binary search for leftmost position where element ≥ target; handles insertion point |
+## 🔍 Binary Search
+
+| #                                                                                            | Problem                                 | Time     | Space | Notes                                                                                                                     |
+| -------------------------------------------------------------------------------------------- | --------------------------------------- | -------- | ----- | ------------------------------------------------------------------------------------------------------------------------- |
+| [704](https://leetcode.com/problems/binary-search/)                                          | Binary Search                           | O(log n) | O(1)  | Standard binary search template for finding exact target                                                                  |
+| [35](https://leetcode.com/problems/search-insert-position/)                                  | Search Insert Position                  | O(log n) | O(1)  | Binary search for leftmost position where element ≥ target; handles insertion point                                       |
+| [34](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | Find First and Last Position of Element | O(log n) | O(1)  | Find lower and upper bounds; for lower bound: if nums[mid] == target, end = mid-1; for upper bound: start = mid+1         |
+| [-](https://takeuforward.org/data-structure/count-occurrences-in-sorted-array/)              | Count Occurrences in Sorted Array       | O(log n) | O(1)  | Same as problem 34 but return (upperBound - lowerBound + 1) instead of [i,j]                                              |
+| [33](https://leetcode.com/problems/search-in-rotated-sorted-array/)                          | Search in Rotated Sorted Array          | O(log n) | O(1)  | One side from mid is always sorted; check if target in sorted side, eliminate other side                                  |
+| [81](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)                       | Search in Rotated Sorted Array II       | O(n)     | O(1)  | Same as 33 but with duplicates; handle edge case by incrementing start and decrementing end when nums[start] == nums[end] |
+| [153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)                   | Find Minimum in Rotated Sorted Array    | O(log n) | O(1)  | Compare with sorted part and eliminate it; if array already sorted (start < end), return start                            |
+| [-](https://takeuforward.org/arrays/find-out-how-many-times-the-array-has-been-rotated/)     | Find Rotation Count                     | O(log n) | O(1)  | Find minimum element's index - that index represents the number of rotations                                              |
+| [540](https://leetcode.com/problems/single-element-in-a-sorted-array/)                       | Single Element in a Sorted Array        | O(log n) | O(1)  | Before single element: pairs at (even,odd) indices; after: pairs at (odd,even) indices; eliminate based on pattern check  |
 
 _Last Updated: June 2025_
